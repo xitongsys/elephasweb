@@ -1,18 +1,87 @@
 <!DOCTYPE html><html style="font-size: 98.75px;"><head>
   <script type="text/javascript">
     var domain     = "/";
-    var language   = "cn";
-    var system     = {"company":"","email":"","telephone":"","phone":"","fax":"","address":"","business_hours":"","ico":"\/upload\/favicon.ico?944149","logo":"\/upload\/image\/20220120\/97d0c8bc30ff0594cf052c7d5f0d0009.png","copyright":"COPYRIGHT©2022 Elephas Investment","seo_title":"Elephas Investment","seo_keywords":"","seo_description":"","icp":"","clogo":"\/upload\/image\/20220120\/d0cfe03f5a885daba0e8493a8b6f9724.png","hz":"合格投资者认证","rzz":"<div>在继续浏览本公司网站前，请您确认您或您所代表的机构是一名"合格投资者"。"合格投资者"指根据任何国家和地区的证券和投资法规所规定的有资格投资于私募证券投资基金的专业投资者。例如根据我国《私募投资基金监督管理暂行办法》的规定，合格投资者的标准如下：<\/div>\n<div>一、具备相应风险识别能力和风险承担能力，投资于单只私募基金的金额不低于100万元且符合下列相关标准的单位和个人：<br \/>1、净资产不低于1000万元的单位；<br \/>2、金融资产不低于300万元或者最近三年个人年均收入不低于50万元的个人。(前款所称金融资产包括银行存款、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等。)<\/div>\n<div>二、下列投资者视为合格投资者：<br \/>1、社会保障基金、企业年金等养老基金、慈善基金等社会公益基金；<br \/>2、依法设立并在基金业协会备案的投资计划；<br \/>3、投资于所管理私募基金的私募基金管理人及其从业人员；<br \/>4、中国证监会规定的其他投资者。<\/div>\n<div>如果您继续访问或使用本网站及其所载资料，即表明您声明及保证您或您所代表的机构为"合格投资者"，并将遵守对您适用的司法区域的有关法律及法规，同意并接受以下条款及相关约束。如果您不符合"合格投资者"标准或不同意下列条款及相关约束，请勿继续访问或使用本网站及其所载信息及资料。<\/div>\n<div>投资涉及风险，投资者应详细审阅产品的发售文件以获取进一步资料，了解有关投资所涉及的风险因素，并寻求适当的专业投资和咨询意见。产品净值及其收益存在涨跌可能，过往的产品业绩数据并不预示产品未来的业绩表现。本网站所提供的资料并非投资建议或咨询意见，投资者不应依赖本网站所提供的信息及资料作出投资决策。<\/div>\n<div>与本网站所载信息及资料有关的所有版权、专利权、知识产权及其他产权均为本公司所有。本公司概不向浏览该资料人士发出、转让或以任何方式转移任何种类的权利。<\/div>"};
-    var langAllow  = [{"name":"cn","title":"中文","default":1,"status":1,"cover":"\/upload\/image\/20220117\/2c9274baed70a7c92b96d5ad7ea8eea3.png"}];
-    var langDefault= "cn";
+    var language   = "{{CURRENT_LANGUAGE}}"; // 当前语言代码，例如 'zh-CN' 或 'en-US'
+    window.language = language;
+    var system     = {"company":"","email":"","telephone":"","phone":"","fax":"","address":"","business_hours":"","ico":"\/upload\/favicon.ico?944149","logo":"\/upload\/image\/20220120\/97d0c8bc30ff0594cf052c7d5f0d0009.png","copyright":"COPYRIGHT©2022 Elephas Investment","seo_title":"Elephas Investment","seo_keywords":"","seo_description":"","icp":"","clogo":"\/upload\/image\/20220120\/d0cfe03f5a885daba0e8493a8b6f9724.png","hz":"合格投资者认证","rzz":"<div>在继续浏览本公司网站前，请您确认您或您所代表的机构是一名\"合格投资者\"。\"合格投资者\"指根据任何国家和地区的证券和投资法规所规定的有资格投资于私募证券投资基金的专业投资者。例如根据我国《私募投资基金监督管理暂行办法》的规定，合格投资者的标准如下：<\/div>\n<div>一、具备相应风险识别能力和风险承担能力，投资于单只私募基金的金额不低于100万元且符合下列相关标准的单位和个人：<br \/>1、净资产不低于1000万元的单位；<br \/>2、金融资产不低于300万元或者最近三年个人年均收入不低于50万元的个人。(前款所称金融资产包括银行存款、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等。)<\/div>\n<div>二、下列投资者视为合格投资者：<br \/>1、社会保障基金、企业年金等养老基金、慈善基金等社会公益基金；<br \/>2、依法设立并在基金业协会备案的投资计划；<br \/>3、投资于所管理私募基金的私募基金管理人及其从业人员；<br \/>4、中国证监会规定的其他投资者。<\/div>\n<div>如果您继续访问或使用本网站及其所载资料，即表明您声明及保证您或您所代表的机构为\"合格投资者\"，并将遵守对您适用的司法区域的有关法律及法规，同意并接受以下条款及相关约束。如果您不符合\"合格投资者\"标准或不同意下列条款及相关约束，请勿继续访问或使用本网站及其所载信息及资料。<\/div>\n<div>投资涉及风险，投资者应详细审阅产品的发售文件以获取进一步资料，了解有关投资所涉及的风险因素，并寻求适当的专业投资和咨询意见。产品净值及其收益存在涨跌可能，过往的产品业绩数据并不预示产品未来的业绩表现。本网站所提供的资料并非投资建议或咨询意见，投资者不应依赖本网站所提供的信息及资料作出投资决策。<\/div>\n<div>与本网站所载信息及资料有关的所有版权、专利权、知识产权及其他产权均为本公司所有。本公司概不向浏览该资料人士发出、转让或以任何方式转移任何种类的权利。<\/div>"};
+    var langAllow  = [{"name":"zh-CN","title":"中文","default":1,"status":1,"cover":"\/upload\/image\/20220117\/2c9274baed70a7c92b96d5ad7ea8eea3.png"},{"name":"en-US","title":"English","default":0,"status":1,"cover":"\/upload\/image\/20220117\/2c9274baed70a7c92b96d5ad7ea8eea3.png"}];
+    var langDefault= "zh-CN";
+
+    // 翻译数据将在构建时注入 {{I18N_DATA}}
+    var i18nData = {{I18N_DATA}} || {};
     function url(url) {
       let system = "///decoration/your-link.html";
       return system.replace("decoration/your-link", url);
     }
     function lang(name) {
-      let langParameter = {"cn":"中文","en":"英文","name":"姓名","phone":"电话","email":"邮箱","address":"地区","message":"留言","keepContact":"你想和我们保持联系吗？"};
-      return typeof langParameter[name] === "undefined" || langParameter[name] === "" ? name : langParameter[name];
+      // 支持点符号路径，例如 'global.nav_home'
+      if (typeof i18nData !== 'undefined' && i18nData !== null) {
+        var keys = name.split('.');
+        var value = i18nData;
+        for (var i = 0; i < keys.length; i++) {
+          if (value && typeof value === 'object' && keys[i] in value) {
+            value = value[keys[i]];
+          } else {
+            // 如果没有找到翻译，尝试从后备字典获取
+            var fallbackDict = {"cn":"中文","en":"英文","name":"姓名","phone":"电话","email":"邮箱","address":"地区","message":"留言","keepContact":"你想和我们保持联系吗？"};
+            return typeof fallbackDict[name] === "undefined" || fallbackDict[name] === "" ? name : fallbackDict[name];
+          }
+        }
+        return value;
+      } else {
+        // 后备：旧版翻译字典
+        var fallbackDict = {"cn":"中文","en":"英文","name":"姓名","phone":"电话","email":"邮箱","address":"地区","message":"留言","keepContact":"你想和我们保持联系吗？"};
+        return typeof fallbackDict[name] === "undefined" || fallbackDict[name] === "" ? name : fallbackDict[name];
+      }
     }
+
+    function switchLanguage(langCode) {
+      // 调试：显示弹窗确认函数被调用
+
+      try {
+        // 设置首选语言
+        localStorage.setItem('preferred_lang', langCode);
+
+        // 设置cookie
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (30 * 24 * 60 * 60 * 1000));
+        document.cookie = 'lang=' + langCode + ';expires=' + expires.toUTCString() + ';path=/';
+
+        // 获取当前页面文件名
+        var currentPath = window.location.pathname;
+        var fileName = 'index.html'; // 默认跳转到首页
+
+        // 尝试获取当前文件名
+        if (currentPath && currentPath !== '/') {
+          var parts = currentPath.split('/');
+          var lastPart = parts[parts.length - 1];
+          if (lastPart && (lastPart === 'index.html' || lastPart === 'about.html' || lastPart === 'join.html' || lastPart === 'contact.html')) {
+            fileName = lastPart;
+          }
+        }
+
+        // 构建目标URL
+        var targetUrl;
+        if (window.location.protocol === 'file:') {
+          // 文件协议：假设目录结构为 dist/zh-CN/index.html
+          targetUrl = '../' + langCode + '/' + fileName;
+        } else {
+          // HTTP协议
+          targetUrl = '/' + langCode + '/' + fileName;
+        }
+
+
+        // 执行跳转
+        window.location.href = targetUrl;
+
+      } catch (error) {
+        console.error('语言切换错误:', error);
+      }
+    }
+    window.switchLanguage = switchLanguage;
+  // 调试：检查函数是否已定义
+  if (typeof switchLanguage === 'undefined') {
+  }
   </script>
 
   <meta charset="utf-8">
@@ -46,6 +115,35 @@ $(document).ready(function(){
   $(".header .an").click(function(){
     $(".nav").slideToggle();
     $(this).toggleClass("n");
+  });
+
+  // 初始化语言切换器高亮状态
+  function updateLanguageSwitcher() {
+    var currentLang = window.language || "zh-CN";
+    $(".lang-link").removeClass("active");
+    if (currentLang === "zh-CN") {
+      $("#langLinkZh").addClass("active");
+    } else if (currentLang === "en-US") {
+      $("#langLinkEn").addClass("active");
+    }
+  }
+
+  // 初始更新
+  updateLanguageSwitcher();
+
+  // 为语言切换链接添加事件监听器（备用，以防onclick失效）
+  $('.lang-link').on('click', function(e) {
+    e.preventDefault();
+    var langCode = $(this).hasClass('zh-cn') ? 'zh-CN' : 'en-US';
+    window.switchLanguage(langCode);
+  });
+
+  // 语言切换后更新（如果页面没有重定向）
+  window.addEventListener('storage', function(e) {
+    if (e.key === 'preferred_lang') {
+      window.language = e.newValue;
+      updateLanguageSwitcher();
+    }
   });
 });
 function setAuthentication() {

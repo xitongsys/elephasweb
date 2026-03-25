@@ -1,12 +1,17 @@
 <div class="header">
   <div class="logo"><a href="index.html"><img src="assets/images/97d0c8bc30ff0594cf052c7d5f0d0009.png" class="p_c"><img src="assets/images/d0cfe03f5a885daba0e8493a8b6f9724.png" class="s_j"></a></div>
+  <div class="language-switcher header-language">
+    <a href="#" onclick="switchLanguage('zh-CN'); return false;" class="lang-link zh-cn" id="langLinkZh">{{i18n.global.language_zh}}</a>
+    <span class="lang-separator">|</span>
+    <a href="#" onclick="switchLanguage('en-US'); return false;" class="lang-link en-us" id="langLinkEn">{{i18n.global.language_en}}</a>
+  </div>
   <div class="an"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
   <div class="nav">
     <ul>
-      <li><a href="index.html">首页</a></li>
-      <li><a href="about.html">关于我们</a></li>
-      <li><a href="join.html">招贤纳士</a></li>
-      <li><a href="contact.html">联系我们</a></li>
+      <li><a href="index.html">{{i18n.global.nav_home}}</a></li>
+      <li><a href="about.html">{{i18n.global.nav_about}}</a></li>
+      <li><a href="join.html">{{i18n.global.nav_join}}</a></li>
+      <li><a href="contact.html">{{i18n.global.nav_contact}}</a></li>
     </ul>
   </div>
 </div>
