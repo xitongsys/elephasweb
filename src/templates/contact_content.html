@@ -1,0 +1,53 @@
+<div class="head_h"></div>
+<div class="ny_ban" style="background-image:url(assets/images/fa240bbf2e0799c5925e7b4a61b77cd1.jpg);">
+  <div class="bn_bt wow fadeInLeft" data-wow-delay=".3s"></div>
+</div>
+<div class="ny_pd">
+  <div class="container"><a href="index.html">首页</a> > 联系我们</div>
+</div>
+<div class="lx_wm">
+  <div class="container">
+    <div class="lx_fs">
+      <ul class="wow fadeInUp" data-wow-delay=".3s">
+                <li>
+          <div class="l_m">
+            <h1>中国上海</h1>
+            <em></em>
+          </div>
+          <div class="x_x"><p>地址：上海徐汇区兴国路89弄4号<br>邮箱：data@elephasinvestment.com<br>电话：+86 021 54365027</p></div>
+        </li>
+                <li>
+          <div class="l_m">
+            <h1>中国香港</h1>
+            <em></em>
+          </div>
+          <div class="x_x"><p>地址：香港中环雪厂街24-30号顺豪大厦23楼<br>邮箱：data@elephasinvestment.com<br>电话：+852 37523969</p></div>
+        </li>
+              </ul>
+    </div>
+  </div>
+</div>
+<div id="app">
+  <div class="lx_bd wow fadeInUp" data-wow-delay=".3s">
+    <div class="container">
+      <el-form-message :id="1"></el-form-message>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  new Vue({
+    el: '#app',
+    data() {
+      return {}
+    }
+  })
+  $(window).scroll(function(){
+    var top = $(window).scrollTop();
+    var th = $(".header").height();
+    if(top>th){
+      $(".header").addClass("on");
+    }else{
+      $(".header").removeClass("on");
+    }
+  });
+</script>
