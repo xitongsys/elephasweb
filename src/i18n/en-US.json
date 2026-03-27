@@ -86,9 +86,9 @@
   "contact": {
     "breadcrumb_contact": "Contact",
     "shanghai": "Shanghai, China",
-    "shanghai_address": "Address: No. 4, Lane 89, Xingguo Road, Xuhui District, Shanghai\\nEmail: data@elephasinvestment.com\\nPhone: +86 021 54365027",
+    "shanghai_address": "Address: No. 4, Lane 89, Xingguo Road, Xuhui District, Shanghai<br>Email: data@elephasinvestment.com<br>Phone: +86 021 54365027",
     "hongkong": "Hong Kong, China",
-    "hongkong_address": "Address: 23/F, Shun Ho Tower, 24-30 Ice House Street, Central, Hong Kong\\nEmail: data@elephasinvestment.com\\nPhone: +852 37523969"
+    "hongkong_address": "Address: 23/F, Shun Ho Tower, 24-30 Ice House Street, Central, Hong Kong<br>Email: data@elephasinvestment.com<br>Phone: +852 37523969"
   },
   "modal": {
     "title": "Qualified Investor Certification",
