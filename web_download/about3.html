@@ -1,0 +1,483 @@
+<!DOCTYPE html><html style="font-size: 98.75px;"><head>
+        <script type="text/javascript">
+            var domain     = "/";
+            var language   = "cn";
+            var system     = {"company":"","email":"","telephone":"","phone":"","fax":"","address":"","business_hours":"","ico":"\/upload\/favicon.ico?944149","logo":"\/upload\/image\/20220120\/97d0c8bc30ff0594cf052c7d5f0d0009.png","copyright":"COPYRIGHT©2022 Elephas Investment","seo_title":"Elephas Investment","seo_keywords":"","seo_description":"","icp":"","clogo":"\/upload\/image\/20220120\/d0cfe03f5a885daba0e8493a8b6f9724.png","hz":"合格投资者认证","rzz":"<div>在继续浏览本公司网站前，请您确认您或您所代表的机构是一名“合格投资者”。“合格投资者”指根据任何国家和地区的证券和投资法规所规定的有资格投资于私募证券投资基金的专业投资者。例如根据我国《私募投资基金监督管理暂行办法》的规定，合格投资者的标准如下：<\/div>\n<div>一、具备相应风险识别能力和风险承担能力，投资于单只私募基金的金额不低于100万元且符合下列相关标准的单位和个人：<br \/>1、净资产不低于1000万元的单位；<br \/>2、金融资产不低于300万元或者最近三年个人年均收入不低于50万元的个人。(前款所称金融资产包括银行存款、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等。)<\/div>\n<div>二、下列投资者视为合格投资者：<br \/>1、社会保障基金、企业年金等养老基金、慈善基金等社会公益基金；<br \/>2、依法设立并在基金业协会备案的投资计划；<br \/>3、投资于所管理私募基金的私募基金管理人及其从业人员；<br \/>4、中国证监会规定的其他投资者。<\/div>\n<div>如果您继续访问或使用本网站及其所载资料，即表明您声明及保证您或您所代表的机构为“合格投资者”，并将遵守对您适用的司法区域的有关法律及法规，同意并接受以下条款及相关约束。如果您不符合“合格投资者”标准或不同意下列条款及相关约束，请勿继续访问或使用本网站及其所载信息及资料。<\/div>\n<div>投资涉及风险，投资者应详细审阅产品的发售文件以获取进一步资料，了解有关投资所涉及的风险因素，并寻求适当的专业投资和咨询意见。产品净值及其收益存在涨跌可能，过往的产品业绩数据并不预示产品未来的业绩表现。本网站所提供的资料并非投资建议或咨询意见，投资者不应依赖本网站所提供的信息及资料作出投资决策。<\/div>\n<div>与本网站所载信息及资料有关的所有版权、专利权、知识产权及其他产权均为本公司所有。本公司概不向浏览该资料人士发出、转让或以任何方式转移任何种类的权利。<\/div>"};
+            var langAllow  = [{"name":"cn","title":"中文","default":1,"status":1,"cover":"\/upload\/image\/20220117\/2c9274baed70a7c92b96d5ad7ea8eea3.png"}];
+            var langDefault= "cn";
+            function url(url) {
+                let system = "///decoration/your-link.html";
+                return system.replace("decoration/your-link", url);
+            }
+            function lang(name) {
+                let langParameter = {"cn":"中文","en":"英文","name":"姓名","phone":"电话","email":"邮箱","address":"地区","message":"留言","keepContact":"你想和我们保持联系吗？"};
+                return typeof langParameter[name] === "undefined" || langParameter[name] === "" ? name : langParameter[name];
+            }
+        </script>
+        
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="icon" href="images/favicon.ico">
+<title>Elephas Investment</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery.min_1.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/index.js"></script>    
+<script type="text/javascript" src="js/region.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+  new WOW().init();
+</script>
+<script type="text/javascript" charset="utf-8" src="js/form.js"></script>
+<style>
+/* 季度投资观点摘要悬停效果 - 模拟策略条线效果 */
+body .viewpoints-container a.quarter-label {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1a2e6b;
+    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none !important;
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+body .viewpoints-container a.quarter-label:hover {
+    background-color: #213677 !important;
+    box-shadow: 0 0 20px rgba(0,0,0,.5) !important;
+    transform: translateY(-8px) !important;
+    -webkit-transform: translateY(-8px) !important;
+    -moz-transform: translateY(-8px) !important;
+    -ms-transform: translateY(-8px) !important;
+    -o-transform: translateY(-8px) !important;
+    text-decoration: none !important;
+    color: white !important;
+}
+/* 确保链接在viewpoint-item中正确显示 */
+body .viewpoints-container .viewpoint-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+body .viewpoints-container .viewpoint-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="logo"><a href="index.html"><img src="images/97d0c8bc30ff0594cf052c7d5f0d0009.png" class="p_c"><img src="images/d0cfe03f5a885daba0e8493a8b6f9724.png" class="s_j"></a></div>
+  <div class="an"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  <div class="nav">
+    <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="join.html">招贤纳士</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+  </div>
+</div>
+<div class="modal fade exampleModalCenterFirst show" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalCenterTitle" style="padding-right: 17px; display: block;" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-body-top">
+            <div class="modal-body-title">合格投资者认证</div>
+            <div class="modal-body-content"><div>在继续浏览本公司网站前，请您确认您或您所代表的机构是一名“合格投资者”。“合格投资者”指根据任何国家和地区的证券和投资法规所规定的有资格投资于私募证券投资基金的专业投资者。例如根据我国《私募投资基金监督管理暂行办法》的规定，合格投资者的标准如下：</div>
+<div>一、具备相应风险识别能力和风险承担能力，投资于单只私募基金的金额不低于100万元且符合下列相关标准的单位和个人：<br>1、净资产不低于1000万元的单位；<br>2、金融资产不低于300万元或者最近三年个人年均收入不低于50万元的个人。(前款所称金融资产包括银行存款、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等。)</div>
+<div>二、下列投资者视为合格投资者：<br>1、社会保障基金、企业年金等养老基金、慈善基金等社会公益基金；<br>2、依法设立并在基金业协会备案的投资计划；<br>3、投资于所管理私募基金的私募基金管理人及其从业人员；<br>4、中国证监会规定的其他投资者。</div>
+<div>如果您继续访问或使用本网站及其所载资料，即表明您声明及保证您或您所代表的机构为“合格投资者”，并将遵守对您适用的司法区域的有关法律及法规，同意并接受以下条款及相关约束。如果您不符合“合格投资者”标准或不同意下列条款及相关约束，请勿继续访问或使用本网站及其所载信息及资料。</div>
+<div>投资涉及风险，投资者应详细审阅产品的发售文件以获取进一步资料，了解有关投资所涉及的风险因素，并寻求适当的专业投资和咨询意见。产品净值及其收益存在涨跌可能，过往的产品业绩数据并不预示产品未来的业绩表现。本网站所提供的资料并非投资建议或咨询意见，投资者不应依赖本网站所提供的信息及资料作出投资决策。</div>
+<div>与本网站所载信息及资料有关的所有版权、专利权、知识产权及其他产权均为本公司所有。本公司概不向浏览该资料人士发出、转让或以任何方式转移任何种类的权利。</div></div>
+            <div class="line"></div>
+          </div>
+          <div class="modal-first-bottom">
+            <div class="modal-first-bottom-giveup" onclick="setAuthentication()">
+              接受
+            </div>
+            <div class="modal-first-bottom-giveup">
+              放弃
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $(".header .an").click(function(){
+    $(".nav").slideToggle();
+      $(this).toggleClass("n");
+    });
+  });
+  function setAuthentication() {
+    let obj = {
+        data: 1,
+        time: Date.now(),
+        expire: 600000000
+    };
+    localStorage.setItem('authentication', JSON.stringify(obj));
+    $('#exampleModalCenter').css("display","none");
+  }
+  if (getAuthentication() === 1) {
+    $('#exampleModalCenter').css("display","none");
+  }
+
+  function getAuthentication(){
+      let val = JSON.parse(localStorage.getItem('authentication'));
+      if (!val) {
+          return val;
+      }
+      if (Date.now() - val.time > val.expire) {
+          localStorage.removeItem('authentication');
+          return null;
+      }
+      return val.data;
+  }
+</script>
+<div class="head_h"></div>
+<div class="ny_ban" style="background-image:url(images/fa240bbf2e0799c5925e7b4a61b77cd1.jpg);">
+  <div class="bn_bt bn_dw wow fadeInLeft" data-wow-delay=".3s">Elephas Investment立足于世界前沿科学，着眼全球市场投资机会，将价值投资的理念和科学的量化投资体系相结合， 立志成为一流的资产管理公司，为社会创造长期价值。</div>
+</div>
+<div class="ny_pd">
+  <div class="container"><a href="/">首页</a> > 关于我们</div>
+</div>
+<div class="gs_js">
+  <div class="container">
+    <div class="wz_nr wow fadeInLeft" data-wow-delay=".3s">
+      <div class="t_s">Elephas Investment成立于2015年，是一家运用科学的系统化投资体系，在有效平衡风险与收益的前提下进行二级市场投资的资产管理公司。</div>
+      <div class="w_z">Elephas Investment是价值投资的信奉者，我们长期致力寻找优秀的管理层和拥有广阔的成长空间的伟大的公司。同时，我们立足于世界前沿科学，通过运用数学、统计、金融、物理、计算机等专业学术理论，处理低信噪比的金融数据，自建模型形成多周期、多策略的量化与基本面双轮驱动的投资体系。<br><br></div>
+    </div>
+    <div class="sj_nr wow fadeInRight" data-wow-delay=".3s" style="background: url(images/32768e70f98b8c58289348572c1a4599.jpg) no-repeat center / cover;">
+      <ul>
+                <li>
+          <div class="s_j"><b id="myTargetElement0"></b>年</div>
+          <div class="w_z">公司成立时间</div>
+        </li>
+                <li>
+          <div class="s_j"><b id="myTargetElement1"></b>年+</div>
+          <div class="w_z">策略团队投资经验</div>
+        </li>
+                <li>
+          <div class="s_j"><b id="myTargetElement2"></b>+</div>
+          <div class="w_z">合作机构</div>
+        </li>
+                <li>
+          <div class="s_j"><b id="myTargetElement3"></b>%</div>
+          <div class="w_z">投研人员均毕业于清华、北大、哈佛、牛津、伦敦政经、哥大、芝大等顶级学府</div>
+        </li>
+              </ul>
+    </div>
+  </div>
+</div>
+
+<div class="tx_lm">
+  <div class="container">
+    <div class="tx_bt">投研体系</div>
+    <div class="swiper-container swiper-tx">
+      <div class="swiper-wrapper">
+                <div class="swiper-slide">
+          <div class="n_r">
+            <div class="t_w">
+              <div class="t_b"><img src="images/2664169423c4ffb525e21e8e86c77d38.svg"></div>
+              <div class="w_z">分散投资</div>
+            </div>
+          </div>
+        </div>
+                <div class="swiper-slide">
+          <div class="n_r">
+            <div class="t_w">
+              <div class="t_b"><img src="images/9808e20de2c61fbaca01423f76411b43.svg"></div>
+              <div class="w_z">胜率与赔率</div>
+            </div>
+          </div>
+        </div>
+                <div class="swiper-slide">
+          <div class="n_r">
+            <div class="t_w">
+              <div class="t_b"><img src="images/3f1ac9d57af2e6685d2f927af5b6eedf.svg"></div>
+              <div class="w_z">主观逻辑</div>
+            </div>
+          </div>
+        </div>
+                <div class="swiper-slide">
+          <div class="n_r">
+            <div class="t_w">
+              <div class="t_b"><img src="images/7e347c9132adb28e53f7551122f6c445.svg"></div>
+              <div class="w_z">量化选股</div>
+            </div>
+          </div>
+        </div>
+                <div class="swiper-slide">
+          <div class="n_r">
+            <div class="t_w">
+              <div class="t_b"><img src="images/8fa618f0fd2d70cd251770014e690dd5.svg"></div>
+              <div class="w_z">因子组合</div>
+            </div>
+          </div>
+        </div>
+                <div class="swiper-slide">
+          <div class="n_r">
+            <div class="t_w">
+              <div class="t_b"><img src="images/0067f2233201b1e649df14ef8e4b4b3b.svg"></div>
+              <div class="w_z">AI投研</div>
+            </div>
+          </div>
+        </div>
+                <div class="swiper-slide">
+          <div class="n_r">
+            <div class="t_w">
+              <div class="t_b"><img src="images/e483e09b1be668fc2fe4b506ed712c21.svg"></div>
+              <div class="w_z">投行与专家</div>
+            </div>
+          </div>
+        </div>
+              </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+<div class="tx_ys">
+  <div class="container">
+    <div class="tx_bt">投资组合</div>
+    <div class="ys_nr">
+      <ul>
+                <li class="wow fadeInUp" data-wow-delay=".3s">
+          <div class="l_m">数据工程</div>
+          <div class="n_r"><p>量价数据、基本面数据、其他数据，提取与清洗</p>
+<p>数据特征选择：采用不同频率数据</p></div>
+        </li>
+                <li class="wow fadeInUp" data-wow-delay=".4s">
+          <div class="l_m">模型构建</div>
+          <div class="n_r"><p>逻辑支撑模型建设</p>
+<p>模型训练、验证、测试</p>
+<p>实现多周期信号叠加</p></div>
+        </li>
+                <li class="wow fadeInUp" data-wow-delay=".5s">
+          <div class="l_m">组合构建</div>
+          <div class="n_r"><p>风险敞口控制</p>
+<p>主观与量化策略分仓组合再优化</p></div>
+        </li>
+                <li class="wow fadeInUp" data-wow-delay=".6s">
+          <div class="l_m">交易执行</div>
+          <div class="n_r"><p>极速行情</p>
+<p>择时优化</p>
+<p>算法交易</p></div>
+        </li>
+              </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".ys_nr ul li").mouseenter(function(){
+	  $(this).addClass("on");
+	  $(this).find(".n_r").stop().slideDown();
+	  $(this).siblings().find(".l_m").removeClass("on");
+	  $(this).siblings().find(".n_r").stop().slideUp();
+    });
+	$(".ys_nr ul li").mouseleave(function(){
+	  $(this).removeClass("on");
+	  $(this).find(".n_r").stop().slideUp();
+    });
+  });
+</script>
+<div class="ty_tx">
+  <div class="container">
+    <div class="tx_bt">策略条线</div>
+    <div class="tx_js wow fadeInUp" data-wow-delay=".3s">
+      <ul>
+                <li>
+          <div class="b_t">CTA</div>
+          <div class="j_t">+</div>
+          <div class="n_r">将机器学习与数学、物理、统计、金融的前沿学术理论相结合，使之能够处理信噪比极低的金融数据，再通过复杂的数据工程，深度挖掘因群体的非理性交易而产生的交易信号；从而形成持续有效的多周期多品种策略。</div>
+        </li>
+                <li>
+          <div class="b_t">灵活<br>对冲</div>
+          <div class="j_t">+</div>
+          <div class="n_r">股票多头由很主观价值投资与量化选股共同构成，空头为量化股指期货策略，自建风险模型及组合优化算法，通过负相关的策略组合追求更好夏普比。</div>
+        </li>
+                <li>
+          <div class="b_t">指数<br>增强</div>
+          <div class="j_t">+</div>
+          <div class="n_r">跟踪指数的同时，对股票多头进行主动管理，包含对行业、风格、仓位、个股等权重进行调整，以实现对指数的超越。</div>
+        </li>
+              </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+	var win = $(window).width();
+	if(win<640){
+      $(".tx_js li").click(function(){
+        $(this).find(".n_r").slideToggle();
+	    $(this).siblings().find(".n_r").slideUp();
+      });
+	};
+  });
+</script>
+
+<div class="quarterly-viewpoints">
+  <div class="container">
+    <div class="viewpoints-header wow fadeInUp" data-wow-delay=".3s">
+      <h2>季度投资观点摘要</h2>
+      <p class="subtitle">基于我们对资本市场的持续研究，以下是我们近期的核心观点总结</p>
+    </div>
+
+    <div class="viewpoints-container">
+      <div class="viewpoint-item wow fadeInUp" data-wow-delay=".4s">
+        <a href="../quarterly_letters/2024Q3_letter.html" class="quarter-label" target="_blank" style="background-color: red !important;">2024年第三季度</a>
+        <div class="viewpoint-content">
+          <p>"牛市诞生于悲观，成长于怀疑，成熟于乐观，死于狂热。"今年夏天，我们带着对中国股市有可预见的上涨的坚定信念。彼时国内外对中国的经济前景普遍悲观，我们认为这似乎没有根据。市场对风险溢价率定价已过于极端，而这恰是良好投资回报的先兆。个股层面极端定价明显，同等质地公司估值与中国市场形成鲜明对比。</p>
+        </div>
+      </div>
+
+      <div class="viewpoint-item wow fadeInUp" data-wow-delay=".5s">
+        <a href="../quarterly_letters/2024Q4_letter.html" class="quarter-label" target="_blank">2024年第四季度</a>
+        <div class="viewpoint-content">
+          <p>我们主观分析与系统性量化相结合的投资方法。量化模型旨在识别较短时间框架内的价量层面市场机会，这是传统基金经理通常面临的挑战领域。基本面投资组合采取更长期的投资视角，专注投资于具开创精神一流管理团队领导的"好生意"。回顾自2008年以来的政策规律不难发现：政策设计伊始便留有弹性扩容空间，可按需逐步加强。</p>
+        </div>
+      </div>
+
+      <div class="viewpoint-item wow fadeInUp" data-wow-delay=".6s">
+        <a href="../quarterly_letters/2025Q1_letter.html" class="quarter-label" target="_blank">2025年第一季度</a>
+        <div class="viewpoint-content">
+          <p>本季度表现的一个关键贡献因素是我们自成立以来一直持有的中国生物科技板块的长期敞口。科伦博泰生物的TROP-2 ADC药物获得美国FDA多项三期肺癌试验许可，其在美国市场的商业化潜力开始被重新定价。这种重新评估反映了市场对中国领先生物科技公司创新能力的认可。我们建立了一定头寸的泡泡玛特，这是一家垂直整合的中国消费公司，正迅速成为文化出口的巨头。</p>
+        </div>
+      </div>
+
+      <div class="viewpoint-item wow fadeInUp" data-wow-delay=".7s">
+        <a href="../quarterly_letters/2025Q2_letter.html" class="quarter-label" target="_blank">2025年第二季度</a>
+        <div class="viewpoint-content">
+          <p>得益于对外授权的激增，本基金在中国生物科技板块的持仓继续推动净值增长。PD-(L)1/VEGF双抗成为肿瘤学领域最炙手可热的靶点——2025年至今全球最大的肿瘤免疫治疗交易均围绕该通路展开，且全部源自中国。辉瑞制药与三生制药就SSGJ707签署授权许可协议；BioNTech将BNT327授权许可给百时美施贵宝，这些疗法与康方生物的依沃西机制相同。</p>
+        </div>
+      </div>
+
+      <div class="viewpoint-item wow fadeInUp" data-wow-delay=".8s">
+        <a href="../quarterly_letters/2025Q3_letter.html" class="quarter-label" target="_blank">2025年第三季度</a>
+        <div class="viewpoint-content">
+          <p>威迈斯是全球车载充电机领域的领导者，占据全球市场份额约40%。车载充电机是每辆电动汽车中都至关重要的组件。该公司体现了我们更广泛的投资方向：中国的领军企业正利用成本优势和卓越的工程技术，在全球扩张并在海外赚取超额利润。世纪华通是近期两款热门手机游戏的开发运营者，该公司是中国新一波创意能力成功向海外扩张的典范。</p>
+        </div>
+      </div>
+
+      <div class="viewpoint-item wow fadeInUp" data-wow-delay=".9s">
+        <a href="../quarterly_letters/2025Q4_letter.html" class="quarter-label" target="_blank">2025年第四季度</a>
+        <div class="viewpoint-content">
+          <p>需要坦诚的是，本季度产品出现了较为明显的回撤。核心原因在于组合集中度较高，目前主观投资仓位中较大比例的资产配置于中国生物科技板块。我们始终认为，中国生物科技是长期最具吸引力的资产方向之一，因此将本轮调整视为中长期的加仓机会。我们承认投资组合时机选择和集中度决策对业绩表现造成了影响，但仍然坚信基金目前配置于一系列收入能见度正在改善的企业。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="viewpoints-note wow fadeInUp" data-wow-delay="1s">
+      <p>注：以上观点基于我们的市场研究和分析，不构成投资建议。投资涉及风险，过往观点不代表未来表现。</p>
+    </div>
+  </div>
+</div>
+
+<div class="jr_wm" style="background: url(images/4bc606af85d90c8067186badb98e615a.jpg) no-repeat center / cover fixed;">
+  <div class="container">
+    <div class="wm_nr">
+      <h3 class="wow fadeInDown" data-wow-delay=".3s">CREATIVITY EXPLORATION CURIOSITY DILIGENCE BRAVERY</h3>
+      <a href="join.html" class="wow fadeInUp" data-wow-delay=".5s">加入我们<i></i></a>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">COPYRIGHT©2022 Elephas Investment</div>
+</div>
+<script type="text/javascript">
+  $(window).scroll(function(){
+    var top = $(window).scrollTop();
+    var th = $(".header").height();
+    if(top>th){
+      $(".header").addClass("on");
+    }else{
+      $(".header").removeClass("on");
+    }
+  });
+</script>
+<script src="js/countUp.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var options = {
+    useEasing : true, 
+    useGrouping : true, 
+    separator : '', 
+    decimal : '', 
+    prefix : '', 
+    suffix : '' 
+  };
+  var wh = $(window).height();
+  var demo0 = new CountUp("myTargetElement0", 1990, 2015, 0, 5, options);
+  var demo1 = new CountUp("myTargetElement1", 0, 10, 0, 5, options);
+  var demo2 = new CountUp("myTargetElement2", 0, 50, 0, 5, options);
+  var demo3 = new CountUp("myTargetElement3", 0, 90, 0, 5, options);
+  $(window).scroll(function(){
+  	if($(window).scrollTop()>=$(".sj_nr").offset().top - wh){
+        demo0.start();
+    	  demo1.start();
+    	  demo2.start();
+    	  demo3.start();
+  	}
+  })
+</script>
+<script src="js/swiper.min.js" type="text/javascript"></script>
+<script>
+  var galleryThumbs = new Swiper('.swiper-tx', {
+	pagination: {
+      el:'.swiper-pagination',
+	  clickable:true,
+    },
+	autoplay:{
+      delay:6000,
+      stopOnLastSlide:false,
+      disableOnInteraction:false,
+    },
+    slidesPerView:4,
+	slidesPerGroup:4,
+    spaceBetween:0,
+	speed:3000,
+	loop:true,
+	breakpoints:{
+	  1024: {
+        slidesPerView:3,
+		slidesPerGroup:3,
+		speed:2000,
+      },
+      640: {
+		slidesPerView:2,
+		slidesPerGroup:2,
+		speed:1500,
+      },
+	},
+  });
+  galleryThumbs.el.onmouseover = function(){
+    galleryThumbs.autoplay.stop();
+  }
+  galleryThumbs.el.onmouseout = function(){
+    galleryThumbs.autoplay.start();
+  }
+</script>
+
+</body></html>

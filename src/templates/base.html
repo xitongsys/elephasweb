@@ -104,7 +104,7 @@
     new WOW().init();
   </script>
 </head>
-<body>
+<body class="page-{{PAGE_NAME}}">
 {{HEADER}}
 {{MODAL}}
 {{CONTENT}}
@@ -147,28 +147,50 @@ $(document).ready(function(){
   });
 });
 function setAuthentication() {
-  let obj = {
-    data: 1,
-    time: Date.now(),
-    expire: 600000000
-  };
-  localStorage.setItem('authentication', JSON.stringify(obj));
-  $('#exampleModalCenter').css("display","none");
-}
-if (getAuthentication() === 1) {
+  // 存储当天日期，当天内不再弹出
+  var today = new Date().toDateString();
+  localStorage.setItem('authentication', JSON.stringify({ date: today }));
   $('#exampleModalCenter').css("display","none");
 }
 
 function getAuthentication(){
-  let val = JSON.parse(localStorage.getItem('authentication'));
-  if (!val) {
-    return val;
+  var stored = localStorage.getItem('authentication');
+  if (!stored) {
+    return null;
   }
-  if (Date.now() - val.time > val.expire) {
+  try {
+    var val = JSON.parse(stored);
+    if (!val || !val.date) {
+      return null;
+    }
+    // 比较存储日期与当天日期，不同则过期
+    var today = new Date().toDateString();
+    if (val.date !== today) {
+      localStorage.removeItem('authentication');
+      return null;
+    }
+    return 1;
+  } catch(e) {
     localStorage.removeItem('authentication');
     return null;
   }
-  return val.data;
+}
+
+// 在DOM准备好后检查认证状态
+$(document).ready(function(){
+  if (getAuthentication() !== 1) {
+    $('#exampleModalCenter').css("display","block");
+  }
+});
+
+function declineAuthentication() {
+  // 用户选择放弃，必须接受认证才能继续浏览
+  // 设置拒绝标志
+  localStorage.setItem('authentication_declined', 'true');
+  // 显示提示信息
+  alert("您必须接受合格投资者认证才能继续浏览本网站。");
+  // 重定向到空白页面，阻止继续浏览
+  window.location.href = 'about:blank';
 }
 </script>
 {{PAGE_FOOTER_SCRIPTS}}

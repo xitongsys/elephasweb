@@ -6,11 +6,12 @@
 import os
 from pathlib import Path
 
-DIST_DIR = Path(__file__).parent / "dist"
+DIST_DIR = Path(__file__).parent / "web_download"
 
 def check_file(path):
     """检查HTML文件基本结构"""
     print(f"检查: {path.name}")
+    
 
     with open(path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -34,7 +35,7 @@ def check_file(path):
 
     return all_ok
 
-def main():
+def main():~
     """主函数"""
     print("验证生成的HTML文件...")
 

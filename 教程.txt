@@ -1,0 +1,13 @@
+1.打开乌班图软件
+2.输入：cd Document/elephasweb
+3.ls
+4.code .
+5.跳到VS CODE里BASH界面，输入：source ~/claude.sh
+6.claude
+7./login, 选择第二个，网页生成api key，黏贴回来登录完成
+8.claude对话框，自然语言给指令修改网页
+9.BASH里，输入：python build.py
+10.cd dist/
+11.python -m http.server
+12.浏览器访问:127.0.0.1:8000
+13.如果claude对话中超出长度限制，输入：/compact

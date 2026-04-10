@@ -1,4 +1,4 @@
-<div class="modal fade exampleModalCenterFirst show" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalCenterTitle" style="padding-right: 17px; display: block;" aria-modal="true">
+<div class="modal fade exampleModalCenterFirst show" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalCenterTitle" style="padding-right: 17px; display: none;" aria-modal="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -16,7 +16,7 @@
           <div class="modal-first-bottom-giveup" onclick="setAuthentication()">
             {{i18n.modal.accept}}
           </div>
-          <div class="modal-first-bottom-giveup">
+          <div class="modal-first-bottom-giveup" onclick="declineAuthentication()">
             {{i18n.modal.decline}}
           </div>
         </div>

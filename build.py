@@ -69,7 +69,7 @@ PAGES = {
         "title": "Elephas Investment",
         "description": "",
         "content_file": "about_content.html",
-        "styles": '<link rel="stylesheet" type="text/css" href="css/index.css">',
+        "styles": '<link rel="stylesheet" type="text/css" href="css/index.css">\n  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">',
         "scripts": """
 <script type="text/javascript" src="js/jquery.min_1.js"></script>
 <script type="text/javascript" src="js/vue.js"></script>
@@ -78,8 +78,22 @@ PAGES = {
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/form.js"></script>""",
         "footer_scripts": """
-<script src="js/countUp.min.js" type="text/javascript"></script>
-<script src="js/swiper.min.js" type="text/javascript"></script>"""
+<script src="js/swiper.min.js" type="text/javascript"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof katex === 'undefined') return;
+  document.querySelectorAll('.formula-katex').forEach(function(el) {
+    var formula = el.getAttribute('data-formula');
+    if (!formula) return;
+    try {
+      katex.render(formula, el, { throwOnError: false, displayMode: false });
+    } catch (e) {
+      console.error('KaTeX render error:', e);
+    }
+  });
+});
+</script>"""
     },
     "join": {
         "title": "Elephas Investment",
@@ -222,7 +236,8 @@ def build_page(page_name, config, lang_code, translations):
         "{{FOOTER}}": footer,
         "{{PAGE_FOOTER_SCRIPTS}}": config["footer_scripts"],
         "{{I18N_DATA}}": i18n_data_json,
-        "{{CURRENT_LANGUAGE}}": lang_code
+        "{{CURRENT_LANGUAGE}}": lang_code,
+        "{{PAGE_NAME}}": page_name
     }
 
     html = base_template

@@ -20,34 +20,56 @@
       <div class="texBox">{{i18n.index.banner_text}}</div>
     </li>
   </ul>
-  <div class="z_copy">{{i18n.global.copyright}}</div>
 </div>
-<script type="text/javascript" src="js/swiper.min.js"></script>
+<div class="gs_js">
+  <div class="container">
+    <div class="wz_nr wow fadeInLeft" data-wow-delay=".3s">
+      <div class="t_s">{{i18n.about.company_description}}</div>
+      <div class="w_z">{{i18n.about.company_philosophy}}<br><br></div>
+    </div>
+    <div class="sj_nr wow fadeInRight" data-wow-delay=".3s" style="background: url(assets/images/32768e70f98b8c58289348572c1a4599.jpg) no-repeat center / cover;">
+      <ul>
+        <li>
+          <div class="s_j"><b id="myTargetElement0"></b>{{i18n.about.stats_year_unit}}</div>
+          <div class="w_z">{{i18n.about.stats_company_years}}</div>
+        </li>
+        <li>
+          <div class="s_j"><b id="myTargetElement1"></b>{{i18n.about.stats_year_plus_unit}}</div>
+          <div class="w_z">{{i18n.about.stats_experience}}</div>
+        </li>
+        <li>
+          <div class="s_j"><b id="myTargetElement2"></b>+</div>
+          <div class="w_z">{{i18n.about.stats_partners}}</div>
+        </li>
+        <li>
+          <div class="s_j"><b id="myTargetElement3"></b>%</div>
+          <div class="w_z">{{i18n.about.stats_graduates}}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="js/countUp.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-//   if ($(".z_banner").length > 0) {
-//     $(".z_banner_num .all").text("0" + $(".z_banner .bd li").length)
-//     var _w = $('body').width(),
-//         _w_2 = _w / 1,
-//         time = 4000,
-//         transition_time = 1200,
-//         time_with_trans = (time + transition_time) / 1000;
-//     $('.z_banner .imgbg').attr('data-swiper-parallax-x', _w_2)
-//     var myBanner = new Swiper('.z_banner', {
-//         loop: true,
-//         autoplay: true,
-//         delay: 1800,
-//         parallax: true,
-//         effect: "slide",
-//         speed: 1800,
-//         navigation: {
-//           nextEl: '.next',
-//           prevEl: '.prev',
-//         },
-//       on: {
-//         slideChangeTransitionStart: function() {
-//           $(".z_banner_num .index").text("0" + (this.realIndex + 1))
-//         }
-//       }
-//     });
-//   }
+  var options = {
+    useEasing : true,
+    useGrouping : true,
+    separator : '',
+    decimal : '',
+    prefix : '',
+    suffix : ''
+  };
+  var wh = $(window).height();
+  var demo0 = new CountUp("myTargetElement0", 1990, 2015, 0, 5, options);
+  var demo1 = new CountUp("myTargetElement1", 0, 10, 0, 5, options);
+  var demo2 = new CountUp("myTargetElement2", 0, 50, 0, 5, options);
+  var demo3 = new CountUp("myTargetElement3", 0, 90, 0, 5, options);
+  $(window).scroll(function(){
+    if($(window).scrollTop()>=$(".sj_nr").offset().top - wh){
+        demo0.start();
+        demo1.start();
+        demo2.start();
+        demo3.start();
+    }
+  })
 </script>
